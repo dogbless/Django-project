@@ -1,0 +1,8 @@
+
+{%block "content"%}
+    {%for post in object_list%}
+        <center><h5>{{post.date|date:"Y-m-d"}}<a href ="/blog/{{post.id}}">
+{{ post.title }}</a></h5></center>
+    {% endfor %}
+{% endblock %}
+

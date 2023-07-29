@@ -1,0 +1,212 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online food store</title>
+
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <style>
+    label{color: aliceblue;}
+      h1{color: white;}
+      body {
+    background-image: url("{% static 'images/blackwallpaper.jpg' %}");  
+    /* #background-repeat: no-repeat; */
+            }
+      p{color: red;}
+    /* #holder {
+        max-width: 200px;
+        max-height: 200px;
+        overflow: hidden;
+      
+      }
+      
+      #holder img {
+        width: 100%;
+         -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        transition: all 0.8s ease;
+      }
+      
+      #holder img:hover {
+        transform: scale(2,2);
+      } */
+      .item-image{transition: transform 0.5s ease; width: 80px;height: 80px;}
+      .item-image:hover{transform: scale(1.1);}
+    </style>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}" >
+</head>
+
+<body>
+  <center><h1><u>JESSE'S ORGANIC FOODS</u></h1></center>    
+  <div class="row">
+      
+        <div class="col-md-3">
+            <h1>apple</h1>
+            <p>R5 per apple</p>
+            <img class="item-image"src="{% static 'images/apples.jfif' %}">
+            <div> <button type="button" class="btn btn-danger">BUY</button></div>
+           
+
+        </div> 
+        
+        <div class="col-md-3">
+          <h1>banana</h1>
+          <p>R4 per banana</p>
+          <img class="item-image" src="{% static 'images/bannana.jfif' %}">
+          <div> <button type="button" class="btn btn-danger">BUY</button></div>
+      
+        </div>
+
+      
+        <div class="col-md-3">
+            <h1>Oranges</h1>
+            <p>R6 per orange</p>
+            <img class="item-image" src="{% static 'images/oranges.jfif' %}">
+            <div> <button type="button" class="btn btn-danger">BUY</button></div>
+
+
+        </div>
+
+        <div class="col-md-3">
+          <h1>pears</h1>
+          <p>R7 per pear</p>
+          <img class="item-image" src="{% static 'images/pears.jfif' %}">
+          <div> <button type="button" class="btn btn-danger">BUY</button></div>
+
+
+      </div>
+
+        <div class="row">
+      
+          <div class="col-md-3">
+              <h1>Fillet steak</h1>
+              <p>R200 per kilo</p>
+              <img class="item-image"src="{% static 'images/fillet.jfif' %}">
+              <div> <button type="button" class="btn btn-danger">BUY</button></div>
+              
+             
+  
+          </div> 
+          
+          <div class="col-md-3">
+            <h1>Chicken</h1>
+            <p>R50 per kilo</p>
+            <img class="item-image" src="{% static 'images/chicken.jfif' %}">
+            <div> <button type="button" class="btn btn-danger">BUY</button></div>
+        
+          </div>
+  
+        
+          <div class="col-md-3">
+              <h1>milk</h1>
+              <p>R30 per litre</p>
+              <img class="item-image" src="{% static 'images/milk.jfif' %}">
+              <div> <button type="button" class="btn btn-danger">BUY</button></div>
+  
+  
+          </div>
+
+          <div class="col-md-3">
+            <h1>radishes</h1>
+            <p>R1 per radish</p>
+            <img class="item-image" src="{% static 'images/radish.jfif' %}">
+            <div> <button type="button" class="btn btn-danger">BUY</button></div>
+
+
+        </div>
+     
+  </div>
+
+
+  <div class="row">
+      
+    <div class="col-md-3">
+        <h1>soda</h1>
+        <p>R15 per soda</p>
+        <img class="item-image"src="{% static 'images/soda.jfif' %}">
+        <div> <button type="button" class="btn btn-danger">BUY</button></div>
+        
+       
+
+    </div> 
+    
+    <div class="col-md-3">
+      <h1>protein</h1>
+      <p>R700 per 4kg</p>
+      <img class="item-image" src="{% static 'images/protein.jfif' %}">
+      <div> <button type="button" class="btn btn-danger">BUY</button></div>
+  
+    </div>
+
+  
+    <div class="col-md-4">
+        <h1>more coming soon......</h1>
+        
+
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col-md-4">
+        <form>
+         <div class="form-group row">
+          <label for="Name">Name</label>
+         <div><input type="text" class="form-control"></div>
+        </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'images/logo.jpg' %}" img width="75px" img height="80px">
+      </div>
+    </div>
+  </footer>
+  <footer>
+    <div class="row">
+      <div class="col-md-4">
+        <form>
+         <div class="form-group row">
+          <label for="Surname">Surname</label>
+         <div><input type="text" class="form-control"></div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <footer>
+    <div class="row">
+      <div class="col-md-4">
+        <form>
+         <div class="form-group row">
+          <label for="Email">Email</label>
+         <div><input type="text" class="form-control"></div>
+        </div>
+        </form>
+      </div>
+      
+    </div>
+  </footer>
+  <footer>
+    <div class="row">
+      <div class="col-md-4">
+        <form>
+         <div class="form-group row">
+          <label for="phone">phone</label>
+         <div><input type="text" class="form-control"></div>
+         
+         
+        
+          
+           
+          </div>
+        </form>
+      </div>
+      
+    </div>
+    
+  </footer>
+</body>
