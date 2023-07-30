@@ -1,11 +1,24 @@
-FROM python:3.10
+#FROM python:3.10
 
-RUN mkdir /app
+#RUN mkdir /app
 
-COPY requirements.txt /app/
+#COPY requirements.txt /app/
+
+#WORKDIR /app
+
+#RUN pip install -r requirements.txt
+
+#COPY . /app/
+
+
+FROM python:3.10-slim-buster
 
 WORKDIR /app
 
-RUN pip install -r requirements.txt
+COPY requirements.txt requirements.txt
 
-COPY . /app/
+RUN pip3 install -r requirements.txt
+
+COPY . . 
+
+CMD ["python3","manage.py","runserver","0.0.0.0:8000"]
