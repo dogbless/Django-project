@@ -10,7 +10,18 @@ Welcome to mysite.settings's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   modules/polls.rst
+   modules
+   polls
+   accounts
+   blog
+   mysite
+   pages
+   user_auth
+   webapp
+   webapp2
+   
+   
+
 
 
 Indices and tables
