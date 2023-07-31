@@ -10,6 +10,7 @@ Welcome to mysite.settings's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   modules/polls.rst
 
 
 Indices and tables
