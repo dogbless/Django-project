@@ -1,7 +1,7 @@
-mysite
-======
+polls
+=====
 
 .. toctree::
    :maxdepth: 4
 
-   manage
+   polls

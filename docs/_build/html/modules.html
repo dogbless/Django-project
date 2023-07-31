@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mysite &mdash; mysite.settings 00.00.01 documentation</title>
+  <title>polls &mdash; mysite.settings 00.00.01 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,7 +18,9 @@
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="polls package" href="polls.html" />
+    <link rel="prev" title="Welcome to mysite.settings’s documentation!" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,8 +43,19 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="modules/polls.html">polls views</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">polls</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="polls.html">polls package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="polls.html">polls package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accounts.html">accounts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blog.html">blog package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mysite.html">mysite package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages.html">pages package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_auth.html">user_auth package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="webapp.html">webapp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="webapp2.html">webapp2 package</a></li>
 </ul>
 
         </div>
@@ -59,7 +72,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">mysite</li>
+      <li class="breadcrumb-item active">polls</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/modules.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -69,11 +82,59 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="mysite">
-<h1>mysite<a class="headerlink" href="#mysite" title="Permalink to this heading"></a></h1>
+  <section id="polls">
+<h1>polls<a class="headerlink" href="#polls" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="manage.html">manage module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="polls.html">polls package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="polls.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polls.html#module-polls.admin">polls.admin module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polls.html#module-polls.apps">polls.apps module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="polls.html#polls.apps.PollsConfig"><code class="docutils literal notranslate"><span class="pre">PollsConfig</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.apps.PollsConfig.default_auto_field"><code class="docutils literal notranslate"><span class="pre">PollsConfig.default_auto_field</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.apps.PollsConfig.name"><code class="docutils literal notranslate"><span class="pre">PollsConfig.name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="polls.html#module-polls.models">polls.models module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="polls.html#polls.models.Choice"><code class="docutils literal notranslate"><span class="pre">Choice</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Choice.DoesNotExist</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Choice.MultipleObjectsReturned</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.choice_text"><code class="docutils literal notranslate"><span class="pre">Choice.choice_text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.id"><code class="docutils literal notranslate"><span class="pre">Choice.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.objects"><code class="docutils literal notranslate"><span class="pre">Choice.objects</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.question"><code class="docutils literal notranslate"><span class="pre">Choice.question</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.question_id"><code class="docutils literal notranslate"><span class="pre">Choice.question_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.votes"><code class="docutils literal notranslate"><span class="pre">Choice.votes</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="polls.html#polls.models.Question"><code class="docutils literal notranslate"><span class="pre">Question</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Question.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Question.DoesNotExist</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Question.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Question.MultipleObjectsReturned</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Question.choice_set"><code class="docutils literal notranslate"><span class="pre">Question.choice_set</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Question.get_next_by_pub_date"><code class="docutils literal notranslate"><span class="pre">Question.get_next_by_pub_date()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Question.get_previous_by_pub_date"><code class="docutils literal notranslate"><span class="pre">Question.get_previous_by_pub_date()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Question.id"><code class="docutils literal notranslate"><span class="pre">Question.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Question.objects"><code class="docutils literal notranslate"><span class="pre">Question.objects</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Question.pub_date"><code class="docutils literal notranslate"><span class="pre">Question.pub_date</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Question.question_text"><code class="docutils literal notranslate"><span class="pre">Question.question_text</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="polls.html#module-polls.tests">polls.tests module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polls.html#module-polls.urls">polls.urls module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polls.html#module-polls.views">polls.views module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="polls.html#polls.views.detail"><code class="docutils literal notranslate"><span class="pre">detail()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="polls.html#polls.views.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="polls.html#polls.views.results"><code class="docutils literal notranslate"><span class="pre">results()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="polls.html#polls.views.vote"><code class="docutils literal notranslate"><span class="pre">vote()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="polls.html#module-polls">Module contents</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </section>
@@ -81,7 +142,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to mysite.settings’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="polls.html" class="btn btn-neutral float-right" title="polls package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
